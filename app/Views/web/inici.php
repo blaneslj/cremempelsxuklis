@@ -82,13 +82,19 @@
         </div>
         <div class="xk-samarreta-fotos">
             <figure>
-                <img src="<?= base_url('assets/img/samarreta-davant.jpg') ?>" width="912" height="1146" loading="lazy" style="object-position: center 30%"
-                     alt="Noi amb la samarreta negra: al davant, tres diables dibuixats amb tabal, forca i espurnes">
+                <picture>
+                    <source type="image/webp" srcset="<?= base_url('assets/img/samarreta-davant.webp') ?>">
+                    <img src="<?= base_url('assets/img/samarreta-davant.jpg') ?>" width="800" height="1005" loading="lazy" style="object-position: center 30%"
+                         alt="Noi amb la samarreta negra: al davant, tres diables dibuixats amb tabal, forca i espurnes">
+                </picture>
                 <figcaption>Davant</figcaption>
             </figure>
             <figure>
-                <img src="<?= base_url('assets/img/samarreta-esquena.jpg') ?>" width="800" height="1305" loading="lazy" style="object-position: center 40%"
-                     alt="Noi d’esquena amb la samarreta negra amb el lema Cremem pels Xuklis en lletres enceses">
+                <picture>
+                    <source type="image/webp" srcset="<?= base_url('assets/img/samarreta-esquena.webp') ?>">
+                    <img src="<?= base_url('assets/img/samarreta-esquena.jpg') ?>" width="800" height="1305" loading="lazy" style="object-position: center 40%"
+                         alt="Noi d’esquena amb la samarreta negra amb el lema Cremem pels Xuklis en lletres enceses">
+                </picture>
                 <figcaption>Esquena</figcaption>
             </figure>
         </div>

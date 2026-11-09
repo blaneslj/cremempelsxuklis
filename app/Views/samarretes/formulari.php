@@ -26,8 +26,11 @@ $invalid      = static fn (string $camp): string => isset($errors[$camp]) ? ' is
             </ol>
         </div>
         <figure class="xk-form-foto">
-            <img src="<?= base_url('assets/img/samarreta-davant.jpg') ?>" width="912" height="1146" loading="lazy"
-                 alt="Noi amb la samarreta negra: al davant, tres diables dibuixats amb tabal, forca i espurnes">
+            <picture>
+                <source type="image/webp" srcset="<?= base_url('assets/img/samarreta-davant.webp') ?>">
+                <img src="<?= base_url('assets/img/samarreta-davant.jpg') ?>" width="800" height="1005" loading="lazy"
+                     alt="Noi amb la samarreta negra: al davant, tres diables dibuixats amb tabal, forca i espurnes">
+            </picture>
         </figure>
     </div>
 
