@@ -12,8 +12,10 @@ class Samarretes extends BaseController
     public function index(): string
     {
         return view('samarretes/formulari', [
-            'title'  => 'Samarretes · Cremem pels Xuklis',
-            'config' => config(SamarretesConfig::class),
+            'title'      => 'Compra la samarreta · Cremem pels Xuklis',
+            'descripcio' => 'Reserva la samarreta solidària de Cremem pels Xuklis. Tot el que recaptem va a La Casa dels Xuklis.',
+            'pagina'     => 'samarretes',
+            'config'     => config(SamarretesConfig::class),
         ]);
     }
 

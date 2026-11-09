@@ -16,6 +16,9 @@ class Samarretes extends BaseConfig
     /** Adreça on arriba l'avís de cada comanda nova */
     public string $correuAvis = 'blaneslj@gmail.com';
 
+    /** Correu de contacte que surt al peu de la web (buit = no es mostra) */
+    public string $correuContacte = '';
+
     /** Quantitat màxima per talla */
     public int $quantitatMaxima = 999;
 
