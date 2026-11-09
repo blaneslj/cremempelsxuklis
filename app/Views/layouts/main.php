@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <?php if (str_starts_with(uri_string(), 'admin')): ?><meta name="robots" content="noindex, nofollow"><?php endif ?>
     <title><?= esc($title ?? 'Cremem pels Xuklis') ?></title>
     <link rel="icon" href="<?= base_url('favicon.ico') ?>">
     <link rel="stylesheet" href="<?= base_url('assets/bootstrap/css/bootstrap.min.css') ?>">
@@ -21,8 +22,18 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="menuPrincipal">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="<?= site_url('/') ?>">Inici</a></li>
+                <?php $ruta = uri_string(); ?>
+                <ul class="navbar-nav ms-auto align-items-md-center">
+                    <li class="nav-item"><a class="nav-link<?= $ruta === '' ? ' active' : '' ?>" href="<?= site_url('/') ?>">Inici</a></li>
+                    <li class="nav-item"><a class="nav-link<?= $ruta === 'samarretes' ? ' active' : '' ?>" href="<?= site_url('samarretes') ?>">Samarretes</a></li>
+                    <?php if (session('admin') === true): ?>
+                        <li class="nav-item"><a class="nav-link<?= str_starts_with($ruta, 'admin') ? ' active' : '' ?>" href="<?= site_url('admin/comandes') ?>"><i class="bi bi-list-check"></i> Comandes</a></li>
+                        <li class="nav-item">
+                            <?= form_open('admin/surt', ['class' => 'd-inline']) ?>
+                                <button type="submit" class="btn btn-link nav-link"><i class="bi bi-box-arrow-right"></i> Surt</button>
+                            <?= form_close() ?>
+                        </li>
+                    <?php endif ?>
                 </ul>
             </div>
         </div>

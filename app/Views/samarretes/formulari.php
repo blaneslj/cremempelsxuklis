@@ -4,7 +4,16 @@
 <?php $errors = session('errors') ?? []; ?>
 <div class="row justify-content-center">
     <div class="col-xl-6 col-lg-7 col-md-9">
-        <h1 class="h2 mb-4"><i class="bi bi-person-vcard"></i> Samarretes</h1>
+        <h1 class="h2 mb-3"><i class="bi bi-person-vcard"></i> Samarretes</h1>
+
+        <div class="bg-body-tertiary border rounded-3 p-3 mb-4">
+            <p class="mb-2">El funcionament és el següent:</p>
+            <ol class="mb-0">
+                <li>Feu la comanda posant les vostres dades.</li>
+                <li>Ens posarem en contacte amb vosaltres per confirmar la comanda i informant-vos del procediment de pagament.</li>
+                <li>Un cop rebut el pagament us informarem per a que pugueu recollir la comanda.</li>
+            </ol>
+        </div>
 
         <?php if (session('missatge')): ?>
             <div class="alert alert-success d-flex align-items-center" role="alert">
