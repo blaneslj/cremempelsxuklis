@@ -38,7 +38,7 @@
             <h2 class="xk-titol">Foc, tabals i molta germanor</h2>
         </div>
         <div class="xk-col-text">
-            <p>Cremem pels Xuklis és un correfoc infantil i solidari organitzat per l’Associació AFANOC i la Federació Diables de la Ciutat de Barcelona. Diables i tabalers de tota la ciutat surten junts al carrer amb un sol objectiu: fer pinya amb els xuklis, els infants i joves amb càncer que acompanya AFANOC.</p>
+            <p>Cremem pels Xuklis és un correfoc infantil i solidari organitzat per l’Associació AFANOC, els Diables de Montbau i la Federació Diables de la Ciutat de Barcelona. Diables i tabalers de tota la ciutat surten junts al carrer amb un sol objectiu: fer pinya amb els xuklis, els infants i joves amb càncer que acompanya AFANOC.</p>
             <p>Tot el que recaptem durant la festa es destina a La Casa dels Xuklis. Vine a cremar, a ballar sota les espurnes o a mirar-ho des de la vorera: cada persona hi suma.</p>
             <a class="xk-boto xk-boto-fosc" href="<?= site_url('afanoc') ?>">Coneix l’AFANOC →</a>
         </div>
@@ -169,6 +169,8 @@
                 <img class="xk-logo-afanoc" src="<?= base_url('assets/img/logo-afanoc.png') ?>" width="349" height="100" loading="lazy"
                      alt="Associació AFANOC – Càncer en infants i joves (què és l’AFANOC)">
             </a>
+            <img class="xk-logo-montbau" src="<?= base_url('assets/img/logo-diables-montbau.svg') ?>" width="170" height="120" loading="lazy"
+                 alt="Diables de Montbau">
             <img class="xk-logo-federacio" src="<?= base_url('assets/img/logo-federacio-diables.png') ?>" width="327" height="84" loading="lazy"
                  alt="Federació Diables de la Ciutat de Barcelona">
         </div>

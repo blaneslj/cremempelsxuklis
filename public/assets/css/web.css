@@ -194,6 +194,7 @@ button.xk-boto { cursor: pointer; font-family: inherit; }
 .xk-logos img { width: auto; max-width: 100%; object-fit: contain; display: block; }
 .xk-logo-afanoc { height: 100px; }
 .xk-logo-federacio { height: 84px; }
+.xk-logo-montbau { height: 120px; }
 
 /* Peu */
 .xk-peu-vora { border-top: 1px solid var(--xk-vora); }

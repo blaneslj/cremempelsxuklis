@@ -65,7 +65,7 @@ $a = static fn (string $ancora): string => ($inici ? '' : site_url('/')) . '#' .
 
 <footer class="xk-peu<?= $inici ? '' : ' xk-peu-vora' ?>">
     <div class="xk-contenidor">
-        <span>© <?= date('Y') ?> Cremem pels Xuklis · AFANOC i Federació Diables de la Ciutat de Barcelona</span>
+        <span>© <?= date('Y') ?> Cremem pels Xuklis · AFANOC, Diables de Montbau i Federació Diables de la Ciutat de Barcelona</span>
         <?php if (($correu = config(\Config\Samarretes::class)->correuContacte) !== ''): ?>
             <span>Contacte: <a href="mailto:<?= esc($correu, 'attr') ?>"><?= esc($correu) ?></a></span>
         <?php else: ?>
